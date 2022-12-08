@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.cdde0731.css",
-    "main.js": "/static/js/main.b4e0eeac.js",
-    "static/js/787.d5d7d508.chunk.js": "/static/js/787.d5d7d508.chunk.js",
-    "index.html": "/index.html",
-    "main.cdde0731.css.map": "/static/css/main.cdde0731.css.map",
-    "main.b4e0eeac.js.map": "/static/js/main.b4e0eeac.js.map",
-    "787.d5d7d508.chunk.js.map": "/static/js/787.d5d7d508.chunk.js.map"
+    "main.css": "/hishabkitab/static/css/main.cdde0731.css",
+    "main.js": "/hishabkitab/static/js/main.7d15eed6.js",
+    "static/js/787.d5d7d508.chunk.js": "/hishabkitab/static/js/787.d5d7d508.chunk.js",
+    "index.html": "/hishabkitab/index.html",
+    "main.cdde0731.css.map": "/hishabkitab/static/css/main.cdde0731.css.map",
+    "main.7d15eed6.js.map": "/hishabkitab/static/js/main.7d15eed6.js.map",
+    "787.d5d7d508.chunk.js.map": "/hishabkitab/static/js/787.d5d7d508.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.cdde0731.css",
-    "static/js/main.b4e0eeac.js"
+    "static/js/main.7d15eed6.js"
   ]
 }
