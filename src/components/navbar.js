@@ -1,16 +1,29 @@
-import React from "react";
+import React, { Component } from "react";
 import './navbar.css';
-
+import {GiHamburgerMenu} from 'react-icons/gi';
 
 const image = "https://hishabkitab.com/wp-content/uploads/2022/12/HKlogo.svg";
-const navbar = () => {
+
+class navbar extends  Component {
+    
+    
+  state = {clicked : false};
+  handleClick = () =>{
+    this.setState({clicked:
+    !this.state.clicked})
+  }
+  
+render(){
   return (
+    
     <>
-    <div className="banner">
+    <div className="slider">
+  
       <nav className="main_nav">
         {/*logo part start here*/}
         <div className="logo">
-          <img src={image} alt="hishabkitab" />
+          <a href="#"></a>
+<img src={image} alt="hishabkitab" />
         </div>
         {/*logo part ends here*/}
 
@@ -47,11 +60,62 @@ const navbar = () => {
        
 
         </div>
+        <div className="side_menu">
+        
+      <a href="#" className={this.state.clicked ? "#side_bar active":"#side_bar"}><GiHamburgerMenu /></a>
+      <p>Menu</p>
+      
+
+      </div>
+      <div id="side_bar" className="active">
+   <div className="top">
+   <div>Menu</div>
+   <div>categories</div>
+
+   </div>
+    
+      <ul>
+            <li>
+              <a href="#" >Home</a>
+            </li>
+            <li>
+              <a href="#">Shop</a>
+            </li>
+            <li>
+              <a href="#"> Blog</a>
+            </li>
+            <li>
+              <a href="#">portfolio</a>
+            </li>
+            <li>
+              <a href="#">about us</a>
+            </li>
+            <li>
+              <a href="#">contact us</a>
+            </li>
+            <li>
+              <a href="#">wishlist</a>
+            </li>
+            <li>
+              <a href="#">compare</a>
+            </li>
+            <li>
+              <a href="#">login / resister</a>
+            </li>
+          </ul>
+
+      </div>
         {/*get quotes parts starts here*/}
       </nav>
+
+      
       </div>
+
+
+
+      
     </>
   );
 };
-
+}
 export default navbar;
