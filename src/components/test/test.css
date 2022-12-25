@@ -1,32 +1,12 @@
-.test{
-    color: red;
+.quote a:hover{
+ color: white; 
+
 }
-.modules{
+@media only screen and (max-width: 992px) {
+  .support {
     display: none;
-}
-
-@media only screen and (max-width: 1024px) {
-    
-      .modules{
-        display: none;
-        margin-left: 35%;
-        font-weight: 600;
-
-
-      }
-      
-    
   }
-  
-  @media only screen and (max-width: 900px) {
-    
-    .modules{
-      display: block;
-      margin-left: 35%;
-      font-weight: 600;
-
-
-    }
-    
-  
+  .quote{
+    display: none;
+  }
 }

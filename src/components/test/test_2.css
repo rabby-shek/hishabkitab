@@ -1,0 +1,21 @@
+@media only screen and (max-width: 1024px) {
+    
+    .left{
+      display: none;
+
+
+
+    }
+    
+  
+}
+#navbar {
+  position: fixed;
+  top: -250px;
+  width: 100%;
+  display: block;
+  transition: top 0.4s;
+  z-index: 1;
+}
+
+
