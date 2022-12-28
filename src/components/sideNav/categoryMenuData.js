@@ -1,6 +1,6 @@
 import { TbArmchair2 } from 'react-icons/tb';
 import { GiCook } from 'react-icons/gi';
-
+import { IoCarSportOutline } from 'react-icons/io';
 
 export const getCategories = () =>
     [
@@ -26,27 +26,27 @@ export const getCategories = () =>
         },
         {
             "name": "Lighting"
-            , "icon": "TbArmchair2"
+            , "icon":<i className='fas fa-user'></i>
         },
         {
             "name": "toys"
-            , "icon": "TbArmchair2"
+            , "icon": <i className='fas fa-user'></i>
         },
         {
             "name": "hand-made"
-            , "icon": "TbArmchair2"
+            , "icon": <i className='fas fa-user'></i>
         },
         {
             "name": "minimalism"
-            , "icon": "TbArmchair2"
+            , "icon": <i className='fas fa-user'></i>
         },
         {
             "name": "electronics"
-            , "icon": "TbArmchair2"
+            , "icon": <i className='fas fa-user'></i>
         },
         {
             "name": "cars",
-            "icon": "TbArmchair2"
+            "icon": <i className='fas fa-user'></i>
         }
 
     ];

@@ -4,14 +4,21 @@
     display: flex;
 }
 .menu{
+
     width: 50%;
     text-align: center;
     cursor: pointer;
     padding: 12px;
     color:  rgba(0, 0, 0, 0.3);
+    border-width: 0;
+    transition: width .3s;
+    
+    
 }
 .menu:hover{
     color:  rgba(0, 0, 0, 1);
+    border-bottom: 1px solid red;
+    border-width: 100%;
 
 }
 .menu:active{
@@ -42,12 +49,12 @@
     content: '';
     display: block;
     width: 0;
-    height: 2px;
-    background: #000;
+    border-bottom: 1px solid red;
     transition: width .3s;
 }
 .menu:hover::after {
     width: 100%;
+  
 }
 .cat::after {
     content: '';
