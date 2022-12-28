@@ -1,0 +1,16 @@
+.menu_1{
+    margin-left: -10px;
+}
+.menu_1 ul li{
+    list-style-type: none;
+    margin-top: 10px;
+    border-bottom: 1px solid rgba(255, 255, 145, 0.5);
+    
+
+}
+.menu_1 ul li a{
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    text-transform: uppercase;
+}

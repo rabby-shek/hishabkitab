@@ -14,7 +14,7 @@ const Slider = () => {
   
   return (
     <>
-    <Nav_data />
+  
       <Carousel activeIndex={index} onSelect={handleSelect}>
         
 

@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import './navbar.css';
 import {GiHamburgerMenu} from 'react-icons/gi';
+import Test_canvas from "./sideNav/Test_canvas";
 
 const image = "https://hishabkitab.com/wp-content/uploads/2022/12/HKlogo.svg";
 
@@ -62,49 +63,12 @@ render(){
         </div>
         <div className="side_menu">
         
-      <a href="#" className={this.state.clicked ? "#side_bar active":"#side_bar"}><GiHamburgerMenu /></a>
-      <p>Menu</p>
+      <Test_canvas />
+      
       
 
       </div>
-      <div id="side_bar" className="active">
-   <div className="top">
-   <div>Menu</div>
-   <div>categories</div>
-
-   </div>
-    
-      <ul>
-            <li>
-              <a href="#" >Home</a>
-            </li>
-            <li>
-              <a href="#">Shop</a>
-            </li>
-            <li>
-              <a href="#"> Blog</a>
-            </li>
-            <li>
-              <a href="#">portfolio</a>
-            </li>
-            <li>
-              <a href="#">about us</a>
-            </li>
-            <li>
-              <a href="#">contact us</a>
-            </li>
-            <li>
-              <a href="#">wishlist</a>
-            </li>
-            <li>
-              <a href="#">compare</a>
-            </li>
-            <li>
-              <a href="#">login / resister</a>
-            </li>
-          </ul>
-
-      </div>
+     
         {/*get quotes parts starts here*/}
       </nav>
 
