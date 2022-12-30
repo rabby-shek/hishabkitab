@@ -15,8 +15,8 @@ import { FaTelegram } from 'react-icons/fa';
 const Foter = () => {
   return (
     <div id='foter'>
-       
-        <div className='foter_top'>
+    
+       <div className='foter_top'>
   
             <div className='element'>
                 <p style={{
@@ -76,18 +76,21 @@ const Foter = () => {
         </div>
         <hr />
         <div className='foter_bottom'>
-        <div style={{
+        <div className='bottom_left' style={{
             float:"left",
             width:"100%",
             fontSize:"15px"
         }}>HishabKitab C 2022 CREATED BY Hishab Kitab Team. ULTIMATE ACCOUNTING SOLUTIONS.</div>
-        <div style={{
+        <div className='bottom_right' style={{
             marginLeft:"26%"
         }}>
             <img src="https://hishabkitab.com/wp-content/themes/woodmart/images/payments.png" alt="credit" />
         </div>
 
         </div>
+      
+    
+       
       
       </div>
     
