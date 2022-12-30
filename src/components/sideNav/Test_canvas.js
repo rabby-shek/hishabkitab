@@ -10,7 +10,7 @@ const Test_canvas = () => {
     const [show, setShow] = useState(false);
     const [navShow,setNav] = useState(true);
 
-  const handleClose = () => setShow(false);
+  const handleClose = () => {setShow(false);}
   const handleShow = () => setShow(true);
 
   return (
@@ -36,7 +36,7 @@ const Test_canvas = () => {
             </div>
             <div>
                 {
-                    ((navShow) ? <Menu /> : <Categories />)
+                    ((navShow) ? <Menu  handleClose={handleClose}/> : <Categories />)
 
                 }
 

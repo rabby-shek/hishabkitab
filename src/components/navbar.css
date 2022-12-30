@@ -3,9 +3,19 @@
     margin: 0;
   
 }
+#newnavbar {
+    position: fixed;
+    width: 100%;
+    height: 90px;
+    top: -250px;
+    transition: top 0.4s;
+    background-color: white;
+    z-index: 10;
+  }
 .slider{
     
     height: 1000px;
+    background-color: orange;
 }
 .main_nav{
     width: 100%;
@@ -21,8 +31,9 @@
     height: 90px;
     width: 30%;
     align-items: center;
-    padding-left: 50px;
+    padding-left: -10px;
     cursor: pointer;
+    
    
 }
 .logo img{
@@ -30,6 +41,7 @@
   max-width: 220px;
   height: 56px;
   padding: 0 5px;
+  margin-left: 38px;
    
 }
 .menu_links{
@@ -61,7 +73,7 @@
     height: 85px;
     display: flex;
     align-items: center;
-    margin-left: 0px;
+    margin-left: 17px;
     
     
 }
@@ -97,7 +109,7 @@
     width: 30%;
     display: flex;
     align-items: center;
-    margin-left: -65px;
+    margin-left: 127px;
    
     
     
@@ -249,7 +261,7 @@
         width: 30%;
         display: flex;
         align-items: center;
-        margin-left: -65px;
+        margin-left: -10px;
        
         
         
@@ -270,7 +282,10 @@
     }
 
 }
+@media only screen and (max-width: 1250px){
 
+
+}
 
 @media only screen and (max-width: 1024px)
 {

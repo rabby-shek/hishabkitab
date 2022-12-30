@@ -1,0 +1,101 @@
+#foter{
+    height: 350px;
+    background-color: #0F253F;
+    color: white;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 50px;
+
+}
+.facebook{
+    height: 35px;
+    width: 35px;
+    background-color: #576779;
+    border-radius: 50%;
+    padding: 8px;
+    color: white;
+    transition: 0.3s;
+}
+.facebook:hover{
+    background-color: #365493;
+}
+.twitter{
+    height: 35px;
+    width: 35px;
+    background-color: #576779;
+    border-radius: 50%;
+    padding: 8px;
+    color: white;
+    transition: 0.3s;
+    margin: 5px;
+
+}
+.twitter:hover{
+    background-color: #33CCFF;
+}
+.pinterest{
+    height: 35px;
+    width: 35px;
+    background-color: #576779;
+    border-radius: 50%;
+    padding: 8px;
+    color: white;
+    transition: 0.3s;
+    margin: 5px;
+
+}
+.pinterest:hover{
+    background-color: #CB2027;
+}
+.linkedin{
+    height: 35px;
+    width: 35px;
+    background-color: #576779;
+    border-radius: 50%;
+    padding: 8px;
+    color: white;
+    transition: 0.3s;
+    margin: 5px;
+
+}
+.linkedin:hover{
+    background-color: #0274B3;
+
+}
+.telegram{
+    height: 35px;
+    width: 35px;
+    background-color: #576779;
+    border-radius: 50%;
+    padding: 8px;
+    color: white;
+    transition: 0.3s;
+    margin: 5px;
+
+}
+.telegram:hover{
+    background-color: #37AEE2;
+
+}
+.foter_bottom{
+    display: flex;
+    padding-top: 13px;
+
+    
+
+}
+.foter_top{
+    display: inline-flex;
+    flex-wrap: wrap;
+    
+}
+.foter_top .element{
+    margin-top: 15px;
+
+   
+
+}
+.foter_top .element div{
+    margin-top: 15px;
+    font-size: 14px;
+}

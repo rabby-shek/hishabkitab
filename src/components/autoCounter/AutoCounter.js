@@ -12,23 +12,43 @@ const AutoCounter = () => {
             background: "black",
             width: "100%",
             color: "white",
-            height: "1400px",
+            height: "350px",
             padding: "20px",
-            marginTop: "300px",
+            marginTop: "47px",
           }}
         >
-          <h1>
+        <div>
+        <h1>
             {count && <CountUp start={0} end={2000} duration={2} delay={0} />}
           </h1>
-          <h1>
+          <h6>HAPPY COSTUMERS</h6>
+
+        </div>
+        <div>
+        <h1>
             {count && <CountUp start={0} end={2012} duration={2} delay={0} />}
           </h1>
-          <h1>
+          <h6>FOUNDING YEAR</h6>
+
+        </div>
+        <div>
+        
+        <h1>
           {count && <CountUp start={0} end={190} duration={2} delay={0} />}
           </h1>
-          <h1>
+          <h6>COMPANY WORK WITH US</h6>
+
+        </div>
+        <div>
+        <h1>
           {count && <CountUp start={0} end={750} duration={2} delay={0} />}
           </h1>
+          <h6>PROJECTS COMPLETED</h6>
+
+        </div>
+         
+        
+         
         </div>
       </ScrollTrigger>
     </>

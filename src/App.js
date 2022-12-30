@@ -8,6 +8,11 @@ import NAV from './components/test/test_2';
 import Slider from './components/slider/Slider';
 import AutoCounter from './components/autoCounter/AutoCounter';
 import Test_canvas from './components/sideNav/Test_canvas';
+import Services from './components/services_2/Services';
+import About from './components/aboutus/About';
+import Pricing from './components/pricing/Pricing';
+import Blog from './components/blog/Blog';
+import Foter from './components/foteer/Foter';
 
 
 
@@ -18,6 +23,12 @@ function App() {
  <>
 
 <Navbar />
+<Services />
+<About />
+<Pricing />
+<Blog />
+<Foter />
+
 
 
 {/*<AutoCounter />*/}
