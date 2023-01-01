@@ -19,7 +19,7 @@ function scrollFunction() {
   return (
     
     <>
-    <div className="slider">
+    <div className=" slider">
   
       <nav className="main_nav">
         {/*logo part start here*/}

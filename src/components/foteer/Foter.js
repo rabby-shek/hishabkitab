@@ -23,15 +23,15 @@ const Foter = () => {
                     width:"250px"
                 }}>Condimentum adipiscing vel neque dis nam parturient orci at scelerisque neque dis nam parturient.</p>
                 <div>
-                <FaFacebookF className='facebook'/>
-            <BsTwitter className='twitter'/>
-            <GrPinterest className='pinterest'/>
-            <FaLinkedinIn className='linkedin'/>
-            <FaTelegram className='telegram'/>
+                <a href=""><FaFacebookF className='facebook'/></a>
+            <a href="#"><BsTwitter className='twitter'/></a>
+            <a href="#"><GrPinterest className='pinterest'/></a>
+            <a href="#"><FaLinkedinIn className='linkedin'/></a>
+            <a href="#"><FaTelegram className='telegram'/></a>
                 </div>
             </div>
             <div  className='element' style={{
-                marginLeft:"122px"
+                marginLeft:"3%"
             }}>
             
                 
@@ -41,7 +41,7 @@ const Foter = () => {
                 
             </div>
             <div  className='element'  style={{
-                marginLeft:"122px"
+                marginLeft:"3%"
             }}>
              
                     <div>RESOURCES</div>
@@ -51,7 +51,7 @@ const Foter = () => {
               
             </div>
             <div  className='element'  style={{
-                marginLeft:"122px"
+                marginLeft:"3%"
             }}>
                
                     <div>LEGAL</div>
@@ -62,7 +62,7 @@ const Foter = () => {
              
             </div>
             <div  className='element'  style={{
-                marginLeft:"122px"
+                marginLeft:"3%"
             }}>
                 
                     <div>FOOTER MENU</div>
@@ -76,13 +76,13 @@ const Foter = () => {
         </div>
         <hr />
         <div className='foter_bottom'>
-        <div className='bottom_left' style={{
+        <div className='' style={{
             float:"left",
             width:"100%",
             fontSize:"15px"
         }}>HishabKitab C 2022 CREATED BY Hishab Kitab Team. ULTIMATE ACCOUNTING SOLUTIONS.</div>
-        <div className='bottom_right' style={{
-            marginLeft:"26%"
+        <div className='text-sm-center' style={{
+           
         }}>
             <img src="https://hishabkitab.com/wp-content/themes/woodmart/images/payments.png" alt="credit" />
         </div>

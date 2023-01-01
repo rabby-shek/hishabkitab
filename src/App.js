@@ -13,6 +13,7 @@ import About from './components/aboutus/About';
 import Pricing from './components/pricing/Pricing';
 import Blog from './components/blog/Blog';
 import Foter from './components/foteer/Foter';
+import New_footer from './components/Bootstrap/BT_foter/New_footer';
 
 
 
@@ -27,7 +28,7 @@ function App() {
 <About />
 <Pricing />
 <Blog />
-<Foter />
+<New_footer />
 
 
 
