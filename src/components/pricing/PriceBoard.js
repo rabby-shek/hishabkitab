@@ -26,7 +26,7 @@ const PriceBoard = () => {
         <ListGroup.Item style={{textAlign: "center"}}>2 Domains </ListGroup.Item>
         <ListGroup.Item style={{textAlign: "center"}}>Email Support </ListGroup.Item>
         <ListGroup.Item style={{textAlign: "center"}}>
-        <button className='bg-primary text-light p-1'>btton</button>
+        <button className='bg-light p-2'>btton</button>
         </ListGroup.Item>
       </ListGroup>
     </Card>
@@ -44,7 +44,7 @@ const PriceBoard = () => {
         <ListGroup.Item style={{textAlign: "center"}}>2 Email Accounts </ListGroup.Item>
         <ListGroup.Item style={{textAlign: "center"}}>5 Domains </ListGroup.Item>
         <ListGroup.Item style={{textAlign: "center"}}>Full Support </ListGroup.Item>
-        <ListGroup.Item style={{textAlign: "center"}}><button>btton</button></ListGroup.Item>
+        <ListGroup.Item style={{textAlign: "center"}}><button className='bg-light p-2'>btton</button></ListGroup.Item>
       </ListGroup>
     </Card>
 
@@ -61,7 +61,7 @@ const PriceBoard = () => {
         <ListGroup.Item style={{textAlign: "center"}}>2 Email Accounts </ListGroup.Item>
         <ListGroup.Item style={{textAlign: "center"}}>Unlimited Domains </ListGroup.Item>
         <ListGroup.Item style={{textAlign: "center"}}>Full Support </ListGroup.Item>
-        <ListGroup.Item style={{textAlign: "center"}}><button>btton</button></ListGroup.Item>
+        <ListGroup.Item style={{textAlign: "center"}}><button className='bg-light p-2'>btton</button></ListGroup.Item>
       </ListGroup>
     </Card>
 

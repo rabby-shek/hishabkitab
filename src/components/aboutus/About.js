@@ -20,6 +20,7 @@ const About = () => {
                    
                 </div>
                 <p>A client that’s unhappy for a reason is a problem, a client that’s unhappy though he or her can’t quite put a finger on it is worse. Or they fit in but it looks iffy for reasons the folks in the meeting can’t quite tell right now, but they’re unhappy, somehow.</p>
+                <button className='bg-light p-2'>view more</button>
 
 
             </div>
