@@ -26,7 +26,7 @@ const PriceBoard = () => {
         <ListGroup.Item style={{textAlign: "center"}}>2 Domains </ListGroup.Item>
         <ListGroup.Item style={{textAlign: "center"}}>Email Support </ListGroup.Item>
         <ListGroup.Item style={{textAlign: "center"}}>
-        <button>btton</button>
+        <button className='bg-primary text-light p-1'>btton</button>
         </ListGroup.Item>
       </ListGroup>
     </Card>

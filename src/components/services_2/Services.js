@@ -72,7 +72,9 @@ const Services = () => {
      
 
           <div className="services_right_side">
-            <div><img src="https://i0.wp.com/hishabkitab.com/wp-content/uploads/2021/09/corporate-2-img-1.jpg?fit=580%2C540&ssl=1" alt="" /></div>
+            <div><img style={{
+              width:'100%'
+            }} src="https://i0.wp.com/hishabkitab.com/wp-content/uploads/2021/09/corporate-2-img-1.jpg?fit=580%2C540&ssl=1" alt="" /></div>
           </div>
           
 
