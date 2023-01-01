@@ -3,6 +3,7 @@ import './navbar.css';
 import {GiHamburgerMenu} from 'react-icons/gi';
 import Test_canvas from "./sideNav/Test_canvas";
 
+
 const image = "https://hishabkitab.com/wp-content/uploads/2022/12/HKlogo.svg";
 
 const navbar = () =>{
@@ -113,6 +114,7 @@ function scrollFunction() {
        
 
         </div>
+     
         <div className="side_menu">
         
       <Test_canvas />

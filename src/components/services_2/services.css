@@ -1,5 +1,5 @@
 .services{
-    height: 900px;
+    height: 100%;
     display: flex;
  
  
@@ -79,4 +79,5 @@
     text-decoration: none;
     margin-top: 40px;
     color: black;
+    width: 100%;
 }
