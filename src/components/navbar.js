@@ -1,7 +1,12 @@
-import React, { Component } from "react";
+import React, { Component , useRef, useState} from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
 import './navbar.css';
 import {GiHamburgerMenu} from 'react-icons/gi';
 import Test_canvas from "./sideNav/Test_canvas";
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+import { Pagination, Navigation } from "swiper";
 
 
 const image = "https://hishabkitab.com/wp-content/uploads/2022/12/HKlogo.svg";
@@ -125,6 +130,78 @@ function scrollFunction() {
      
         {/*get quotes parts starts here*/}
       </nav>
+
+      <Swiper
+        slidesPerView={1}
+        spaceBetween={0}
+        loop={true}
+        pagination={{
+          clickable: true,
+        }}
+        navigation={true}
+        modules={[Pagination, Navigation]}
+        className="mySwiper"
+      >
+        <SwiperSlide>
+        <div className="row">
+        <div className="col-md-12">
+        <h1>
+            WE Optimize  and Grow Your Bussiness
+          </h1>
+
+        </div>
+        <div className="col-md-12">
+        <p style={{paddingRight:"100px",paddingLeft:"100px"}}>Websites in professional use tempting systems. Commercial publishing platforms and content management systems ensure that you can show different text, different template data using the same wouldn’t have helped.</p>
+
+        </div>
+
+        </div>
+       
+         
+         
+        </SwiperSlide>
+        <SwiperSlide>
+        <div className="row">
+        <div className="col-md-12">
+        <h1>
+            WE Optimize  and Grow Your Bussiness
+          </h1>
+
+        </div>
+        <div className="col-md-12">
+        <p style={{paddingRight:"100px",paddingLeft:"100px"}}>Websites in professional use tempting systems. Commercial publishing platforms and content management systems ensure that you can show different text, different template data using the same wouldn’t have helped.</p>
+
+        </div>
+
+        </div>
+        </SwiperSlide>
+        <SwiperSlide><div className="row">
+        <div className="col-md-12">
+        <h1>
+            WE Optimize  and Grow Your Bussiness
+          </h1>
+
+        </div>
+        <div className="col-md-12">
+        <p style={{paddingRight:"100px",paddingLeft:"100px"}}>Websites in professional use tempting systems. Commercial publishing platforms and content management systems ensure that you can show different text, different template data using the same wouldn’t have helped.</p>
+
+        </div>
+
+        </div></SwiperSlide>
+        <SwiperSlide><div className="row">
+        <div className="col-md-12">
+        <h1>
+            WE Optimize  and Grow Your Bussiness
+          </h1>
+
+        </div>
+        <div className="col-md-12">
+        <p style={{paddingRight:"100px",paddingLeft:"100px"}}>Websites in professional use tempting systems. Commercial publishing platforms and content management systems ensure that you can show different text, different template data using the same wouldn’t have helped.</p>
+
+        </div>
+
+        </div></SwiperSlide>
+      </Swiper>
 
       
       </div>

@@ -1,0 +1,17 @@
+#price_board{
+    margin-left: 10%;
+}
+.butn{
+    text-align: center;
+    padding: 3%;
+    padding-left: 25px;
+    padding-right: 25px;
+    border: 1px solid black;
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    
+}
+.butn:hover{
+    color: white;
+}

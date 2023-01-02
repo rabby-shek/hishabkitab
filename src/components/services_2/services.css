@@ -1,12 +1,12 @@
 .services{
     height: 100%;
+    width: 100%;
     display: flex;
  
  
 }
 .services_left_side{
-    height: 700px;
-    width: 40%;
+ 
     background-color: white;
    margin: 12%;
    margin-left: 9%;

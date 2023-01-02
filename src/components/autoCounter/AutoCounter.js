@@ -9,7 +9,6 @@ const AutoCounter = () => {
       <ScrollTrigger onEnter={() => setCount(true)}>
         <div
           style={{
-            background: "black",
             width: "100%",
             color: "white",
             height: "350px",
@@ -46,6 +45,13 @@ const AutoCounter = () => {
           <h6>PROJECTS COMPLETED</h6>
 
         </div>
+        <button style={{
+                    backgroundColor:"white",
+                    color:"black",
+                    padding:"10px",
+                    marginTop:"5px",
+                    border:"1px solid black"
+                }}>View More</button>
          
         
          
