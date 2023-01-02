@@ -14,6 +14,8 @@ import Pricing from './components/pricing/Pricing';
 import Blog from './components/blog/Blog';
 import Foter from './components/foteer/Foter';
 import New_footer from './components/Bootstrap/BT_foter/New_footer';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Article from './components/article/Article';
 
 
 
@@ -28,8 +30,16 @@ function App() {
 <About />
 <Pricing />
 <Blog />
+<Article />
 <New_footer />
-
+<BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Navbar />}>
+          <Route path="/foter" element={<New_footer />} />
+        
+        </Route>
+      </Routes>
+    </BrowserRouter>
 
 
 {/*<AutoCounter />*/}

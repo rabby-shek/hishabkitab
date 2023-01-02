@@ -1,5 +1,7 @@
-#blog{
-    height: 1000px;
-    background-color: black;
+#blog_top{
+    height: 100%;
+    background-color: #101010;
     color: white;
+    padding-top: 10%;
+    padding-bottom: 10%;
 }

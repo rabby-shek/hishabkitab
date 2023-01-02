@@ -256,12 +256,12 @@ const New_footer = () => {
             paddingBottom: "20px",
           }}
         >
-          <div className=" col-md-7 col-lg-7 col-xl-7 mx-auto ">
+          <div className=" col-md-12 col-lg-7 col-xl-7 mx-auto ">
             HishabKitab C 2022 CREATED BY Hishab Kitab Team. ULTIMATE ACCOUNTING
             SOLUTIONS.
           </div>
           <div className="col-md-2 col-lg-2 col-xl-2 mx-auto"></div>
-          <div className="col-md-3 col-lg-3 col-xl-3 mx-auto ">
+          <div className="col-md-12 col-lg-3 col-xl-3 mx-auto ">
             <img
               src="https://hishabkitab.com/wp-content/themes/woodmart/images/payments.png"
               alt="credit"
