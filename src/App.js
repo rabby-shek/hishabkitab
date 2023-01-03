@@ -14,7 +14,7 @@ import Pricing from './components/pricing/Pricing';
 import Blog from './components/blog/Blog';
 import Foter from './components/foteer/Foter';
 import New_footer from './components/Bootstrap/BT_foter/New_footer';
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import {Route , Routes } from "react-router-dom";
 import Article from './components/article/Article';
 import WishList from './components/wishList/WishList';
 
@@ -23,30 +23,20 @@ import WishList from './components/wishList/WishList';
 
 
 function App() {
-  
   return (
- <>
-
-<Navbar />
-<Services />
-<About />
-<Pricing />
-<Blog />
-<Article />
-<New_footer />
-<BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Navbar />}>
-          <Route path="/wishlist" element={<WishList />} />
-        
-        </Route>
-      </Routes>
-    </BrowserRouter>
+    <Routes>
+      <Route path="/" element={<><Navbar /> <Services /> <About /> <Pricing /> <Blog /> <Article /> <New_footer />
+      </>} />
+      <Route path="/wishlist" element={<WishList />} />
+    </Routes>
 
 
-{/*<AutoCounter />*/}
 
- </>
+
+
+
+
+
   );
 }
 
