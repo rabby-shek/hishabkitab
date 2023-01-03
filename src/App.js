@@ -16,6 +16,8 @@ import Foter from './components/foteer/Foter';
 import New_footer from './components/Bootstrap/BT_foter/New_footer';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Article from './components/article/Article';
+import WishList from './components/wishList/WishList';
+
 
 
 
@@ -35,7 +37,7 @@ function App() {
 <BrowserRouter>
       <Routes>
         <Route path="/" element={<Navbar />}>
-          <Route path="/foter" element={<New_footer />} />
+          <Route path="/wishlist" element={<WishList />} />
         
         </Route>
       </Routes>

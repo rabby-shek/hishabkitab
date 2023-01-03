@@ -15,7 +15,7 @@ const New_footer = () => {
     <div className="foter">
       <div className="container text-md-left">
         <div className="row text-md-left">
-          <div className="col-md-4 col-lg-4 col-xl-4 mx-auto mt-3">
+          <div className="col-md-4 col-lg-4 col-xl-4 mx-auto mt-5">
             <p>
               Condimentum adipiscing vel neque dis nam parturient orci at
               scelerisque neque dis nam parturient.
@@ -38,7 +38,7 @@ const New_footer = () => {
               </a>
             </div>
           </div>
-          <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3 ">
+          <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mt-5 ">
             <p>
               <a
                 href="#"
@@ -78,7 +78,7 @@ const New_footer = () => {
               </a>
             </p>
           </div>
-          <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+          <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mt-5">
             <p>
               {" "}
               <a
@@ -129,7 +129,7 @@ const New_footer = () => {
               </a>
             </p>
           </div>
-          <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+          <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mt-5">
             <p>
               <a
                 href=""
@@ -190,7 +190,7 @@ const New_footer = () => {
               </a>
             </p>
           </div>
-          <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+          <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mt-5">
             <p>
               <a href=""
                style={{

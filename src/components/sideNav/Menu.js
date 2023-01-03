@@ -3,6 +3,7 @@ import './menu.css'
 import {GiSelfLove} from 'react-icons/gi';
 import {FaDraftingCompass} from 'react-icons/fa';
 import {AiOutlineUser} from 'react-icons/ai';
+import { Outlet, Link } from "react-router-dom";
 const Menu = (props) => {
 
 
@@ -33,11 +34,11 @@ const Menu = (props) => {
               <a href="#"  onClick={closeMenu}>contact us</a>
             </li>
             <li>
-              <a href="#"  onClick={closeMenu}><span style={
+              <Link to="/wishlist"  onClick={closeMenu}><span style={
                 {
                     marginRight : "10px"
                 }
-              }><GiSelfLove /></span>wishlist</a>
+              }><GiSelfLove /></span>wishlist</Link>
             </li>
             <li>
               <a href="#" onClick={closeMenu}><span  style={
