@@ -80,6 +80,8 @@
 .foter_bottom{
     display: flex;
     padding-top: 13px;
+    padding-bottom: 30px;
+    
 
     
 
@@ -99,6 +101,68 @@
     margin-top: 15px;
     font-size: 14px;
 }
-.bottom_left{
-    
+.element{
+    margin-left: 9%;
 }
+.element p a{
+    text-decoration: none;
+    color:rgba(255, 255, 255, .6);
+    
+
+}
+.element p a:hover{
+    color:rgba(255, 255, 255, 1);
+}
+.foter_bottom .team{
+    margin-left: 3%;
+}
+.foter_bottom .credit{
+    margin-left: 23%;
+
+}
+
+@media only screen and (max-width: 1250px){
+
+
+}
+
+@media only screen and (max-width: 1024px)
+{
+    .foter_bottom{
+        display: block; 
+    }
+    .foter_bottom .team{
+        margin-left:  auto;
+    }
+    .foter_bottom .credit{
+        margin-left:  auto;
+    
+    }
+}
+@media only screen and (max-width: 768px)
+{
+    .foter_bottom{
+        display: block; 
+    }
+    .foter_bottom .team{
+        margin-left: auto;
+    }
+    .foter_bottom .credit{
+        margin-left:  auto;
+    
+    }
+  
+}
+@media only screen and (max-width: 600px) {
+    .foter_bottom{
+        display: block; 
+    }
+    .foter_bottom .team{
+        margin-left: auto;
+    }
+    .foter_bottom .credit{
+        margin-left:  auto;
+    
+    }
+  
+  }

@@ -26,7 +26,7 @@ import Compare from './components/compare/Compare';
 function App() {
   return (
     <Routes>
-      <Route path="/" element={<><Navbar /> <Services /> <About /> <Pricing /> <Blog /> <Article /> <New_footer />
+      <Route path="/" element={<><Navbar /> <Services /> <About /> <Pricing /> <Blog /> <Article /> <Foter />
       </>} />
       <Route path="/wishlist" element={<WishList />} />
       <Route path="/compare" element={<Compare />} />
