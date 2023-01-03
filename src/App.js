@@ -17,6 +17,7 @@ import New_footer from './components/Bootstrap/BT_foter/New_footer';
 import {Route , Routes } from "react-router-dom";
 import Article from './components/article/Article';
 import WishList from './components/wishList/WishList';
+import Compare from './components/compare/Compare';
 
 
 
@@ -28,6 +29,7 @@ function App() {
       <Route path="/" element={<><Navbar /> <Services /> <About /> <Pricing /> <Blog /> <Article /> <New_footer />
       </>} />
       <Route path="/wishlist" element={<WishList />} />
+      <Route path="/compare" element={<Compare />} />
     </Routes>
 
 

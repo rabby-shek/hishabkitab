@@ -41,12 +41,12 @@ const Menu = (props) => {
               }><GiSelfLove /></span>wishlist</Link>
             </li>
             <li>
-              <a href="#" onClick={closeMenu}><span  style={
+              <Link to="/compare" onClick={closeMenu}><span  style={
                 {
                     marginRight : "10px"
                 }
             }
-              ><FaDraftingCompass /></span>compare</a>
+              ><FaDraftingCompass /></span>compare</Link>
             </li>
             <li>
               <a href="#" onClick={closeMenu}><span  style={
