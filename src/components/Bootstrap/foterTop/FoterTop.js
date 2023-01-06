@@ -6,7 +6,7 @@ const FoterTop = () => {
     <div  id='top'>
     <div className="container text-md-left">
 
-        <div className="row  text-md-center">
+        <div className="row  text-md-left">
           <div className=" col-md-3 col-lg-3 col-xl-3 mx-auto ">
           <img src="https://i0.wp.com/hishabkitab.com/wp-content/uploads/2021/09/corporate-2-img-4-opt.png?fit=180%2C200&ssl=1" alt="" />
           </div>

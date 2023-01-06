@@ -1,6 +1,7 @@
 import React from 'react'
 import AutoCounter from '../autoCounter/AutoCounter'
 import './about.css'
+import Bottom from './bottom'
 const About = () => {
     return (
         <div id='aboutus'>
@@ -34,7 +35,9 @@ const About = () => {
 
   </div>
 </div>
+
 </div>
+
 
         </div>
           

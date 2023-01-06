@@ -10,7 +10,7 @@ import Button from 'react-bootstrap/Button';
 const PriceBoard = () => {
   return (
     <div className='container' id='price_board'>
-       <div className="container text-md-left">
+       <div className="container text-md-center">
 
 <div className="row  text-md-center">
   <div className=" col-md-12 col-lg-4 col-xl-4 mx-auto mt-3">
@@ -49,7 +49,7 @@ const PriceBoard = () => {
     </Card>
 
   </div>
-  <div className="col-md-12 col-lg-4 col-xl-4 mx-auto m-2">
+  <div className="col-md-12 col-lg-4 col-xl-4 mx-auto m-3">
   <h4 style={{marginRight:"22%"}} className='text-center '>Base</h4>
   <Card style={{ width: '19rem' }}>
       <ListGroup variant="flush">

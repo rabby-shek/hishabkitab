@@ -1,5 +1,5 @@
 #price_board{
-    margin-left: 10%;
+    margin-left:10%;
 }
 .butn{
     text-align: center;
@@ -15,3 +15,42 @@
 .butn:hover{
     color: white;
 }
+
+@media only screen and (max-width: 991px)
+{
+    #price_board{
+
+
+        margin-left: 34%;
+    }
+
+}
+@media only screen and (max-width: 888px)
+{
+    #price_board{
+
+
+        margin-left: 30%;
+    }
+
+}
+@media only screen and (max-width: 678px)
+{
+    #price_board{
+
+
+        margin-left: 25%;
+    }
+
+}
+@media only screen and (max-width: 580px)
+{
+    #price_board{
+
+
+        margin-left: 10%;
+    }
+
+}
+
+

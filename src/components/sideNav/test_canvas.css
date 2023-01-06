@@ -15,22 +15,16 @@
     
     
 }
-.menu:hover{
-    color:  rgba(0, 0, 0, 1);
-    border-bottom: 1px solid red;
-    border-width: 100%;
-
-}
-.menu:active{
-    background-color: red;
-    color:  rgba(0, 0, 0, 1);
-}
 .cat{
     width: 50%;
     text-align: center;
     cursor: pointer;
     padding: 12px;
     color:  rgba(0, 0, 0, 0.3);
+}
+.menu:hover{
+    color:  rgba(0, 0, 0, 1);
+
 }
 .cat:hover{
     color:  rgba(0, 0, 0, 1);
@@ -49,7 +43,8 @@
     content: '';
     display: block;
     width: 0;
-    border-bottom: 1px solid red;
+    height: 2px;
+    background: #000;
     transition: width .3s;
 }
 .menu:hover::after {

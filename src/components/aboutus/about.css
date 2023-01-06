@@ -5,3 +5,12 @@
     padding-top: 10%;
     padding-bottom: 10%;
 }
+#bottomstyle{
+    width: 350px;
+    padding: 10px;
+}
+#bottomstyle:hover{
+    background-color: #2035F2;
+    
+
+}

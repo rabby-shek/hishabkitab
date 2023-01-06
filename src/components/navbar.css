@@ -23,6 +23,10 @@
     height: 80px;
     display: flex;
     background: transparent;
+    position: absolute;
+    z-index: 99;
+
+  
     
    
 }
@@ -174,6 +178,7 @@
 .swiper {
     width: 100%;
     height: 100%;
+   
   }
   
   .swiper-slide {
@@ -201,13 +206,46 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+   
   }
   
   .swiper {
     margin-left: auto;
     margin-right: auto;
   }
+  #swip{
+    background-image: url(https://images.pexels.com/photos/1170412/pexels-photo-1170412.jpeg?cs=srgb&dl=pexels-cadeau-maestro-1170412.jpg&fm=jpg);
+ 
+  }
+  #swip_2{
+    background-image: url(https://images.unsplash.com/photo-1497215842964-222b430dc094?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzN8fG9mZmljZXxlbnwwfHwwfHw%3D&w=1000&q=80);
+  }
+#swip_3{
+    background-image: url(https://media.istockphoto.com/photos/modern-gadgets-in-interior-of-coworking-office-during-covid19-picture-id1284066336?b=1&k=20&m=1284066336&s=612x612&w=0&h=7limsDsyNRg6CQzuhmUQlv85B5wO_ca0cgBqOL-YjQE=);
+   
+}
+  .mySwiper{
+  }
 
+  #myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+  }
+  
+  #myBtn:hover {
+    background-color: #555;
+  }
 
 @media only screen and (max-width: 1250px)
 {

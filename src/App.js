@@ -18,19 +18,32 @@ import {Route , Routes } from "react-router-dom";
 import Article from './components/article/Article';
 import WishList from './components/wishList/WishList';
 import Compare from './components/compare/Compare';
-
-
-
-
+import Small_foter from './components/smallfoter/Small_foter';
+import BottomNav from './components/bottomnavigation/BottomNav';
+import Bottom from './components/aboutus/bottom';
 
 function App() {
   return (
-    <Routes>
-      <Route path="/" element={<><Navbar /> <Services /> <About /> <Pricing /> <Blog /> <Article /> <Foter />
+    <>
+    
+    
+  
+    
+    
+    
+     <Routes>
+      <Route path="/" element={<><Navbar /> <Services /> <Bottom /> <About />  <Pricing /> <Blog /> <Article /> <Foter /> <BottomNav />
       </>} />
       <Route path="/wishlist" element={<WishList />} />
       <Route path="/compare" element={<Compare />} />
     </Routes>
+    
+    
+     
+    
+
+    </>
+   
 
 
 
