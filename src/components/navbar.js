@@ -6,23 +6,23 @@ import Test_canvas from "./sideNav/Test_canvas";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import { Pagination, Navigation } from "swiper";
+import { Autoplay, Pagination, Navigation } from "swiper";
 import { Outlet, Link } from "react-router-dom";
+import { AiOutlineArrowUp } from 'react-icons/ai';
 
 
 const image = "https://hishabkitab.com/wp-content/uploads/2022/12/HKlogo.svg";
 
 const navbar = () => {
-  let mybutton = document.getElementById("myBtn");
   window.onscroll = function () { scrollFunction() };
 
   function scrollFunction() {
     if (document.body.scrollTop > 90 || document.documentElement.scrollTop > 90) {
       document.getElementById("newnavbar").style.top = "0";
-      mybutton.style.display = "block";
+      document.getElementById("myBtn").style.display = "block";
     } else {
       document.getElementById("newnavbar").style.top = "-250px";
-      mybutton.style.display = "none";
+      document.getElementById("myBtn").style.display = "none";
     
     }
   }
@@ -39,7 +39,7 @@ const navbar = () => {
 
     <>
       <div className=" slider">
-      <div onClick={topFunction} id="myBtn" title="Go to top">Top</div>
+      <div onClick={topFunction} id="myBtn" title="Go to top"><AiOutlineArrowUp /></div>
 
         <nav className="main_nav">
           {/*logo part start here*/}
@@ -149,11 +149,15 @@ const navbar = () => {
           slidesPerView={1}
           spaceBetween={0}
           loop={true}
+          autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
           pagination={{
             clickable: true,
           }}
           navigation={true}
-          modules={[Pagination, Navigation]}
+          modules={[Autoplay,Pagination, Navigation]}
           className="mySwiper"
         >
           <SwiperSlide  id="swip">

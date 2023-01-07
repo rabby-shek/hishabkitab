@@ -16,7 +16,7 @@ const Test_canvas = () => {
   return (
     <div>
           
-        <GiHamburgerMenu onClick={handleShow} className="ham" /><span onClick={handleShow} className="sathi">MENU</span>
+       <GiHamburgerMenu onClick={handleShow} className="ham" />
       
       <Offcanvas show={show} onHide={handleClose} placement="end" scroll="true">
         <Offcanvas.Header closeButton>

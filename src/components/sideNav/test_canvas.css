@@ -30,12 +30,17 @@
     color:  rgba(0, 0, 0, 1);
 
 }
-.sathi{
+.menu_icon{
     cursor: pointer;
+    color: red;
+    margin-left: 10px ;
+
    } 
     
 .ham{
     cursor: pointer;
+    margin-bottom: 13px;
+    margin-left: 50px;
 
 }
 

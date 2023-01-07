@@ -21,7 +21,7 @@ const BottomNav = () => {
     
   return (
     <div className='botomnav'>
-      <Box >
+      <Box>
       <BottomNavigation
         showLabels
         value={value}

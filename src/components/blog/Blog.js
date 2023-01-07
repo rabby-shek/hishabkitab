@@ -57,23 +57,24 @@ const Blog = () => {
         modules={[Navigation]}
         className="mySwiper"
       >
+      
         <SwiperSlide id='slide'>
-          <img src="https://hishabkitab.com/wp-content/uploads/2021/09/corporate-2-microsoft.svg" alt="" />Microsoft
+          <img src="https://hishabkitab.com/wp-content/uploads/2021/09/corporate-2-microsoft.svg" alt="" />
         </SwiperSlide>
         <SwiperSlide id='slide'>
-          <img src="https://hishabkitab.com/wp-content/uploads/2021/09/corporate-2-network-2.svg" alt="" />Matic
+          <img src="https://hishabkitab.com/wp-content/uploads/2021/09/corporate-2-network-2.svg" alt="" /><div>Matic</div>
         </SwiperSlide>
         <SwiperSlide>
-          <img src="https://hishabkitab.com/wp-content/uploads/2021/09/corporate-2-slack.svg" alt="" />Slack
+          <img src="https://hishabkitab.com/wp-content/uploads/2021/09/corporate-2-slack.svg" alt="" /><div>Slack</div>
         </SwiperSlide>
         <SwiperSlide>
-          <img src="https://hishabkitab.com/wp-content/uploads/2021/09/corporate-2-figma.svg" alt="" />Figma
+          <img src="https://hishabkitab.com/wp-content/uploads/2021/09/corporate-2-figma.svg" alt="" /><div>Figma</div>
         </SwiperSlide>
         <SwiperSlide>
-          <img src="https://hishabkitab.com/wp-content/uploads/2021/09/corporate-2-sketch.svg" alt="" />Sketch
+          <img src="https://hishabkitab.com/wp-content/uploads/2021/09/corporate-2-sketch.svg" alt="" /><div>Sketch</div>
         </SwiperSlide>
         <SwiperSlide>
-          <img src="https://hishabkitab.com/wp-content/uploads/2021/09/corporate-2-pinterest.svg" alt="" />Printerest
+          <img src="https://hishabkitab.com/wp-content/uploads/2021/09/corporate-2-pinterest.svg" alt="" /><div>Printerest</div>
         </SwiperSlide>
       </Swiper>
 

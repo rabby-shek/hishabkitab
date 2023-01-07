@@ -19,7 +19,7 @@ const Menu = (props) => {
               <a href="#" onClick={closeMenu}>Home</a>
             </li>
             <li>
-              <a href="#"  onClick={closeMenu}>Shop</a>
+              <Link to="/shop"  onClick={closeMenu}>Shop</Link>
             </li>
             <li>
               <a href="#blog"  onClick={closeMenu}> Blog</a>
