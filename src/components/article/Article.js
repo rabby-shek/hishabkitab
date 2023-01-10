@@ -10,6 +10,13 @@ import "swiper/css/navigation";
 import { Pagination } from "swiper";
 import { Navigation } from "swiper";
 import Navbar from '../navbar';
+//importing material ui
+import Card from '@mui/material/Card';
+import CardActions from '@mui/material/CardActions';
+import CardContent from '@mui/material/CardContent';
+import CardMedia from '@mui/material/CardMedia';
+import Button from '@mui/material/Button';
+import Typography from '@mui/material/Typography';
 
 const Article = () => {
   return (
@@ -44,100 +51,74 @@ const Article = () => {
         modules={[ Navigation]}
         className="mySwiper"
       >
+      
         <SwiperSlide>
-        <div className='card' style={{
-            width:"23rem"
-        }}>
-        <img src="https://hishabkitab.com/wp-content/uploads/2021/09/corporate-2-blog-img-1.jpg" alt="" />
-             <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-  </div>
-  <div class="card-body">
-    <a href="#" class="card-link" style={{
-        textDecoration:"none",
-        color:"black"
-    }}>Card link</a>
-  </div>
-        </div>
-   
+        <Card sx={{ maxWidth: 345 }}>
+      <CardMedia
+        sx={{ height: 230 }}
+        image="https://hishabkitab.com/wp-content/uploads/2021/09/corporate-2-blog-img-2.jpg"
+        title="green iguana"
+      />
+      <CardContent>
+        <Typography gutterBottom variant="h5" component="div">
+          Title
+        </Typography>
+        <Typography variant="body2" color="text.secondary">
+          Lizards are a widespread group of squamate reptiles, with over 6,000
+          species, ranging across all continents except Antarctica
+        </Typography>
+      </CardContent>
+      <CardActions>
+        <Button size="small">Share</Button>
+        <Button size="small">Learn More</Button>
+      </CardActions>
+    </Card>
         </SwiperSlide>
         <SwiperSlide>
-         <div className='card' style={{
-            width:"23rem"
-        }}>
-        <img src="https://hishabkitab.com/wp-content/uploads/2021/09/corporate-2-blog-img-3.jpg" alt="" />
-             <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-  </div>
-  <div class="card-body">
-    <a href="#" class="card-link"  style={{
-        textDecoration:"none",
-        color:"black"
-    }}>Card link</a>
-  </div>
-        </div></SwiperSlide>
-        <SwiperSlide> <div className='card' style={{
-            width:"23rem"
-        }}>
-        <img src="https://hishabkitab.com/wp-content/uploads/2021/09/corporate-2-blog-img-2.jpg" alt="" />
-             <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-  </div>
-  <div class="card-body">
-    <a href="#" class="card-link"  style={{
-        textDecoration:"none",
-        color:"black"
-    }}>Card link</a>
-  </div>
-        </div></SwiperSlide>
-        <SwiperSlide> <div className='card' style={{
-            width:"23rem"
-        }}>
-        <img src="https://hishabkitab.com/wp-content/uploads/2021/09/corporate-2-blog-img-2.jpg" alt="" />
-             <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-  </div>
-  <div class="card-body">
-    <a href="#" class="card-link"  style={{
-        textDecoration:"none",
-        color:"black"
-    }}>Card link</a>
-  </div>
-        </div></SwiperSlide>
-        <SwiperSlide> <div className='card' style={{
-            width:"23rem"
-        }}>
-        <img src="https://hishabkitab.com/wp-content/uploads/2021/09/corporate-2-blog-img-2.jpg" alt="" />
-             <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-  </div>
-  <div class="card-body">
-    <a href="#" class="card-link"  style={{
-        textDecoration:"none",
-        color:"black"
-    }}>Card link</a>
-  </div>
-        </div></SwiperSlide>
-        <SwiperSlide> <div className='card' style={{
-            width:"23rem"
-        }}>
-        <img src="https://hishabkitab.com/wp-content/uploads/2021/09/corporate-2-blog-img-2.jpg" alt="" />
-             <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-  </div>
-  <div class="card-body">
-    <a href="#" class="card-link"  style={{
-        textDecoration:"none",
-        color:"black"
-    }}>Card link</a>
-  </div>
-        </div></SwiperSlide>
+        <Card sx={{ maxWidth: 345 }}>
+      <CardMedia
+        sx={{ height: 230 }}
+        image="https://hishabkitab.com/wp-content/uploads/2021/09/corporate-2-blog-img-2.jpg"
+        title="green iguana"
+      />
+      <CardContent>
+        <Typography gutterBottom variant="h5" component="div">
+          Title
+        </Typography>
+        <Typography variant="body2" color="text.secondary">
+          Lizards are a widespread group of squamate reptiles, with over 6,000
+          species, ranging across all continents except Antarctica
+        </Typography>
+      </CardContent>
+      <CardActions>
+        <Button size="small">Share</Button>
+        <Button size="small">Learn More</Button>
+      </CardActions>
+    </Card>
+        </SwiperSlide>
+        <SwiperSlide>
+        <Card sx={{ maxWidth: 345 }}>
+      <CardMedia
+        sx={{ height: 230 }}
+        image="https://hishabkitab.com/wp-content/uploads/2021/09/corporate-2-blog-img-2.jpg"
+        title="green iguana"
+      />
+      <CardContent>
+        <Typography gutterBottom variant="h5" component="div">
+          Title
+        </Typography>
+        <Typography variant="body2" color="text.secondary">
+          Lizards are a widespread group of squamate reptiles, with over 6,000
+          species, ranging across all continents except Antarctica
+         
+        </Typography>
+      </CardContent>
+      <CardActions>
+        <Button size="small">Share</Button>
+        <Button size="small">Learn More</Button>
+      </CardActions>
+    </Card>
+        </SwiperSlide>
        
       </Swiper>
       </div>
