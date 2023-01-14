@@ -1,27 +1,106 @@
 .custom_card{
-    padding: 20px;
+    padding-top: 30%;
+    padding-bottom: 30%;
+}
+.product-box{
+    padding: 7px;
+}
+.product-box:hover{
+    box-shadow: 0 33px 61px -29px rgb(0 0 0 / 26%);
+
+}
+.product-inner-box .icons{
+    right: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    top: -3%;
+    transition:  all 0.2s ease-in-out, transform 0.2s ease-in-out,opacity 0.2s ease-in-out;
+    opacity: 0;
+
+}
+.product-inner-box .icons a{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: #fff;
+}
+.product-inner-box .onsale .badge{
+    background: #000;
+    font-size: 12px;
+    padding: 5px 14px;
+    top: 0;
+    position: absolute;
+
+}
+.product-inner-box .onsale .badge::before{
+    border-width: 10px 0px 0px 10px;
+    border-color: transparent transparent transparent #000;
+    content: '';
+    position: absolute;
+    right: -8px;
+    width: 0;
+    bottom: 0;
+    border-style: solid;
+}
+.product-inner-box .onsale .badge::after{
+    border-width: 10px 8px 0px 10px;
+    border-color: #000 transparent transparent  ;
+    content: '';
+    position: absolute;
+    right: -8px;
+    width: 0;
+    top: 0;
+    border-style: solid;
+}
+.product-inner-box img{
+    height: 350px;
     width: 100%;
-    height: 100%;
-   
+    object-fit: cover;
+
+}
+.product-box:hover .icons{
+    transform: rotate(-3%);
+    top: 3%;
+    opacity: 1;
+}
+.cart-btn{
+    position: absolute;
+    bottom: 20px;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    opacity: 0;
+    transition:  all 0.2s ease-in-out, transform 0.2s ease-in-out,opacity 0.2s ease-in-out;
+}
+
+.cart-btn button{
+    padding: 10px;
+    background: transparent;
+    border: transparent;
+    text-align: center;
+}
+.cart-btn span{
+    text-align: center;
+}
+.product-box:hover .cart-btn{
+    opacity: 1;
+}
+.product-name{
     
 }
-.custom_card_box{
-    width: 23rem;
-    text-align: center;
-    height: 500px;
-    transition: 0.3s;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+.product-name h3{
+    font-size: 20px;
+    font-weight: 400;
 }
-.custom_card_box h3{
-    margin-top:-100px;
-    display: none;
+.product-price{
+    
 }
-.custom_card_box img{
-    width: 22rem;
-}
-.custom_card_box:hover{
-    height: 700px;
-}
-.compare_icon{
-    width:50px;
+.product-description button{
+    background: transparent;
+    border: transparent;
+
 }
