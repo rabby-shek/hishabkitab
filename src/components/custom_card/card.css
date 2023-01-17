@@ -1,3 +1,15 @@
+
+.custom_card{
+    padding-top: 30%;
+    padding-bottom: 30%;
+}
+.product-box{
+    padding: 7px;
+}
+.product-box:hover{
+    box-shadow: 0 33px 61px -29px rgb(0 0 0 / 26%);
+
+}
 .product-inner-box .icons{
     right: 15px;
     display: flex;
@@ -33,5 +45,93 @@
     bottom: 20px;
     text-align: center;
     width: 100%;
-    margin-left: 10%;
+    transition:  all 0.2s ease-in-out, transform 0.2s ease-in-out,opacity 0.2s ease-in-out;
+    opacity: 0;
+
+}
+.product-inner-box .icons a{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: #fff;
+    opacity: 0;
+    
+
+}
+.product-inner-box:hover .icons a{
+    opacity: 1;
+}
+.product-inner-box .onsale .badge{
+    background: #000;
+    font-size: 12px;
+    padding: 5px 14px;
+    top: 0;
+    position: absolute;
+
+}
+.product-inner-box .onsale .badge::before{
+    border-width: 10px 0px 0px 10px;
+    border-color: transparent transparent transparent #000;
+    content: '';
+    position: absolute;
+    right: -8px;
+    width: 0;
+    bottom: 0;
+    border-style: solid;
+}
+.product-inner-box .onsale .badge::after{
+    border-width: 10px 8px 0px 10px;
+    border-color: #000 transparent transparent  ;
+    content: '';
+    position: absolute;
+    right: -8px;
+    width: 0;
+    top: 0;
+    border-style: solid;
+}
+.product-inner-box img{
+    height: 350px;
+    width: 100%;
+    object-fit: cover;
+
+}
+.product-box:hover .icons{
+    transform: rotate(-3%);
+    top: 3%;
+    opacity: 1;
+}
+.cart-btn{
+    position: absolute;
+    bottom: 20px;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    opacity: 0;
+    transition:  all 0.2s ease-in-out, transform 0.2s ease-in-out,opacity 0.2s ease-in-out;
+}
+
+.cart-btn button{
+    padding: 10px;
+    background: transparent;
+    border: transparent;
+    text-align: center;
+}
+.cart-btn span{
+    text-align: center;
+}
+.product-box:hover .cart-btn{
+    opacity: 1;
+}
+.product-name h3{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.product-description button{
+    background: transparent;
+    border: transparent;
+
 }
