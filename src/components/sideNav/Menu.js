@@ -56,6 +56,9 @@ const Menu = (props) => {
             }
               ><AiOutlineUser /></span>login / resister</a>
             </li>
+            <li>
+              <Link to="/cart"  onClick={closeMenu}>cart</Link>
+            </li>
           </ul>
     </div>
   )

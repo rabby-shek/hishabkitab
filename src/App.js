@@ -22,6 +22,9 @@ import Small_foter from './components/smallfoter/Small_foter';
 import BottomNav from './components/bottomnavigation/BottomNav';
 import Bottom from './components/aboutus/bottom';
 import Shop from './components/shop/Shop';
+import Card_test from './components/custom_card/Card_test';
+import Cart from './components/custom_card/Cart';
+import { CartProvider } from 'react-use-cart';
 
 function App() {
   return (
@@ -38,6 +41,8 @@ function App() {
       <Route path="/wishlist" element={<WishList />} />
       <Route path="/compare" element={<Compare />} />
       <Route path="/shop" element={<Shop />} />
+      <Route path="/test" element={<Card_test />} />
+      <Route path="/cart" element={<Cart />} />
     </Routes>
     
     
