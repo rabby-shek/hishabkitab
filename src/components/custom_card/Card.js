@@ -11,8 +11,6 @@ import ItemCard from './ItemCard'
 
 
 const Card = () => {
-    const [cardData , setCardData] = useState("")
-
     let Data = getdata();
    
     
@@ -26,8 +24,8 @@ const Card = () => {
             </div>
             <div className='row'>
                 {
-                    Data.map((card_info ,index) =>
-                        <ItemCard key={index} photo={card_info.photo} sale={card_info.sale} name={card_info.productName} item={card_info} des={card_info.ProductDescription} price={card_info.productPrice}/>
+                    Data.map((card_info) =>
+                        <ItemCard photo={card_info.photo} sale={card_info.sale} name={card_info.productName} item={card_info} des={card_info.ProductDescription} price={card_info.productPrice} id={card_info.id} />
                         )
                 }
             </div>

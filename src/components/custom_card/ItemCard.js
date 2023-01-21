@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useContext, useState } from 'react'
 import './card.css'
 import { MdCompareArrows } from 'react-icons/md';
 import { AiFillHeart } from 'react-icons/ai';
@@ -6,9 +6,11 @@ import { AiFillEye } from 'react-icons/ai';
 import { FaLongArrowAltDown } from 'react-icons/fa';
 import { BsFillCartFill } from 'react-icons/bs';
 import { useCart } from 'react-use-cart';
+import {shopContext} from '../context/Shop_context';
 
 const ItemCard = (props) =>{
-    const {addItem} = useCart()
+   const {addTocart} = useContext(shopContext);
+   const {id} = props.
     return (
         <>
          <div className='col-lg-3 col-md-4 mb-3'>     
@@ -26,7 +28,7 @@ const ItemCard = (props) =>{
                                 </div>
                                 <img src={props.photo} alt="photo" className='img-fluid' />
                                 <div className='cart-btn'>
-                                    <button className='shadow-sm rounded-pill'  onClick={() => addItem(props.item)}><BsFillCartFill />Add to cart</button>
+                                    <button className='shadow-sm rounded-pill' onClick={() => addTocart(props.id)}><BsFillCartFill />Add to cart</button>
 
                                 </div>
 
