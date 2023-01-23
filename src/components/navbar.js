@@ -2,6 +2,7 @@ import React, { Component, useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import './navbar.css';
 import { GiHamburgerMenu } from 'react-icons/gi';
+import { BsFillCartFill } from 'react-icons/bs';
 import Test_canvas from "./sideNav/Test_canvas";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -9,6 +10,7 @@ import "swiper/css/navigation";
 import { Autoplay, Pagination, Navigation } from "swiper";
 import { Outlet, Link } from "react-router-dom";
 import { AiOutlineArrowUp } from 'react-icons/ai';
+import { Shop_context } from "./context/Shop_context";
 
 
 const image = "https://hishabkitab.com/wp-content/uploads/2022/12/HKlogo.svg";
@@ -67,6 +69,9 @@ const navbar = () => {
               <li>
                 <a href="#blog">blog</a>
               </li>
+              <li>
+              <Link to="/cart"><BsFillCartFill /></Link>
+              </li>
             </ul>
           </div>
           {/* navigation menu parts ends here */}
@@ -117,6 +122,9 @@ const navbar = () => {
               </li>
               <li>
                 <a href="#blog">blog</a>
+              </li>
+              <li>
+              <Link to="/cart"><BsFillCartFill /></Link>
               </li>
             </ul>
           </div>

@@ -7,11 +7,15 @@ import Card from '../custom_card/Card'
 const Shop = () => {
   console.log("shop");
   return (
-    <div> 
+    <> 
     <Navbar />
+    <div className='container'>
+    
+
+    </div>
     <Card />
     <Foter />
-    </div>
+    </>
   )
 }
 

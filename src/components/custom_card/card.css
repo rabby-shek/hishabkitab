@@ -19,7 +19,7 @@
     transition: all 0.2s ease-in-out,transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
     
 }
-.product-inner-box .icons a{
+.product-inner-box .icons button{
     width: 40px;
     height: 40px;
     display: flex;
@@ -49,7 +49,7 @@
     opacity: 0;
 
 }
-.product-inner-box .icons a{
+.product-inner-box .icons button{
     width: 40px;
     height: 40px;
     display: flex;
@@ -58,10 +58,15 @@
     border-radius: 50%;
     background: #fff;
     opacity: 0;
+    border: transparent;
     
 
 }
-.product-inner-box:hover .icons a{
+
+  
+
+
+.product-inner-box:hover .icons button{
     opacity: 1;
 }
 .product-inner-box .onsale .badge{

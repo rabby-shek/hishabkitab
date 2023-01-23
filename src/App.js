@@ -25,7 +25,7 @@ import Shop from './components/shop/Shop';
 import Card_test from './components/custom_card/Card_test';
 import Cart from './components/custom_card/Cart';
 import { CartProvider } from 'react-use-cart';
-import Shop_context from './components/context/Shop_context';
+import {Shop_context} from './components/context/Shop_context';
 
 
 function App() {

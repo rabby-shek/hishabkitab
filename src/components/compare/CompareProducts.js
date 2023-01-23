@@ -1,5 +1,4 @@
 import React, { useContext, useState } from 'react'
-import './card.css'
 import { MdCompareArrows } from 'react-icons/md';
 import { AiFillHeart } from 'react-icons/ai';
 import { AiFillEye } from 'react-icons/ai';
@@ -7,20 +6,34 @@ import { FaLongArrowAltDown } from 'react-icons/fa';
 import { BsFillCartFill } from 'react-icons/bs';
 import {shopContext} from '../context/Shop_context';
 
-const ItemCard = (props) =>{
-   const {addTocart , cartItems, addToCompare} = useContext(shopContext);
-   const {id, sale, photo,productName,productPrice,ProductDescription} = props.item;
+import {
+    MDBBtn,
+    MDBCard,
+    MDBCardBody,
+    MDBCardImage,
+    MDBCardText,
+    MDBCol,
+    MDBContainer,
+    MDBIcon,
+    MDBInput,
+    MDBRow,
+    MDBTypography,
+    } from "mdb-react-ui-kit";
 
-   const cardCount = cartItems[props.id];
-    return (
-        <>
+const CompareProducts = (props) => {
+    const {addTocart , cartItems, addToCompare, removeFromCompare} = useContext(shopContext);
+    const {id, sale, photo,productName,productPrice,ProductDescription} = props.item;
+  return (
+    <>
          <div className='col-lg-3 col-md-4 mb-3'>     
                         <div className='product-box'>
+                        <a   href='#!' className='text-decoration-none text-dark' onClick={() => removeFromCompare(id)}>
+                        <MDBIcon fas icon="times"/>
+                      </a>
                             <div className='product-inner-box position-relative'>
                                 <div className='icons position-absolute'>
-                                    <button href="#" className='text-decoration-none text-dark'><AiFillHeart /></button>
-                                    <button href="#" className='text-decoration-none text-dark' onClick={() => addToCompare(id)}><MdCompareArrows /></button>
-                                    <button href="#" className='text-decoration-none text-dark'><AiFillEye /></button>
+                                    <button  className='text-decoration-none text-dark'><AiFillHeart /></button>
+                                    <button  className='text-decoration-none text-dark'><AiFillEye /></button>
 
                                 </div>
                                 <div className='onsale'>
@@ -56,10 +69,8 @@ const ItemCard = (props) =>{
 
                     </div>
 
-        </>
-
-
-    )
+    </>
+  )
 }
 
-export default ItemCard;
+export default CompareProducts
