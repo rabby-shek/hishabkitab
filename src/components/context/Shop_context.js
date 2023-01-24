@@ -93,6 +93,28 @@ export const Shop_context = (props) => {
     //compare logical parts starts here
     const [compareItems, setCompareItems] = useState(getDefaultCompare());
 
+    const getTotalCompareAmount = () => {
+      let totalAmount = 0;
+      for (const item in compareItems) {
+        if (compareItems[item] > 0) {
+          let itemInfo = PRODUCTS.find((product) => product.id === Number(item));
+          totalAmount += compareItems[item] * itemInfo.productPrice;
+        }
+      }
+      return totalAmount;
+    };
+
+    const getTotalCompareItem = () => {
+      let totalCompareitem = 0;
+      for (const item in compareItems) {
+        if (compareItems[item] > 0) {
+          let itemInfo = PRODUCTS.find((product) => product.id === Number(item));
+          totalCompareitem += compareItems[item];
+        }
+      }
+      return totalCompareitem;
+    };
+
     const addToCompare = (itemId) => {
       setCompareItems((prev) => ({ ...prev, [itemId]: prev[itemId] + 1 }));
     };
@@ -116,6 +138,8 @@ export const Shop_context = (props) => {
       , getTotalCartItem
       , addToCompare
       , removeFromCompare
+      , getTotalCompareItem
+      , getTotalCompareAmount
     }
 
     //exporting functions ends here

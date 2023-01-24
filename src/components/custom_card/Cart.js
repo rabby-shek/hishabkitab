@@ -11,7 +11,6 @@ import {
     MDBBtn,
     MDBCard,
     MDBCardBody,
-    MDBCardImage,
     MDBCardText,
     MDBCol,
     MDBContainer,
@@ -28,6 +27,19 @@ const Cart = () =>{
 
    const totalamount = getTotalCartAmount();
    const totalItem = getTotalCartItem();
+
+
+   const CheckingCart = () =>{
+    if(totalItem == 0)
+    {
+      return <h1>your cart is empty</h1>
+   
+        
+    }
+   }
+   
+    
+   
  
 
    
@@ -54,6 +66,8 @@ const Cart = () =>{
                   </div>
 
                   <hr className="my-4" />
+                  <CheckingCart />
+                  
                   {
                     
         PRODUCTS.map((product) =>{

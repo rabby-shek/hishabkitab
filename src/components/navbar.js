@@ -1,4 +1,4 @@
-import React, { Component, useRef, useState } from "react";
+import React, { Component, useRef, useState, useContext } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import './navbar.css';
 import { GiHamburgerMenu } from 'react-icons/gi';
@@ -10,12 +10,14 @@ import "swiper/css/navigation";
 import { Autoplay, Pagination, Navigation } from "swiper";
 import { Outlet, Link } from "react-router-dom";
 import { AiOutlineArrowUp } from 'react-icons/ai';
-import { Shop_context } from "./context/Shop_context";
+import { shopContext } from "./context/Shop_context";
 
 
 const image = "https://hishabkitab.com/wp-content/uploads/2022/12/HKlogo.svg";
 
 const navbar = () => {
+ 
+  
   window.onscroll = function () { scrollFunction() };
 
   function scrollFunction() {
@@ -34,8 +36,7 @@ const navbar = () => {
     document.documentElement.scrollTop = 0;
   }
 
-
-
+  
 
   return (
 
