@@ -1,29 +1,40 @@
-import React, { useContext, useState } from 'react'
-import './card.css'
+import React, {useState, useContext} from "react";
 import { MdCompareArrows } from 'react-icons/md';
 import { AiFillHeart } from 'react-icons/ai';
 import { AiFillEye } from 'react-icons/ai';
 import { FaLongArrowAltDown } from 'react-icons/fa';
 import { BsFillCartFill } from 'react-icons/bs';
-import { AiFillStar } from 'react-icons/ai';
-import { AiOutlineStar } from 'react-icons/ai';
 import {shopContext} from '../context/Shop_context';
 
-const ItemCard = (props) =>{
-   const {addTocart , cartItems, addToCompare, addToWish} = useContext(shopContext);
-   const {id, sale, photo,productName,productPrice,ProductDescription,rating} = props.item;
+import {
+    MDBBtn,
+    MDBCard,
+    MDBCardBody,
+    MDBCardImage,
+    MDBCardText,
+    MDBCol,
+    MDBContainer,
+    MDBIcon,
+    MDBInput,
+    MDBRow,
+    MDBTypography,
+    } from "mdb-react-ui-kit";
 
-  
-   const cardCount = cartItems[props.id];
-    return (
+const WishListProducts = (props)  =>{
+
+    const {addTocart , wishItems, addToCompare, removeFromWish, addToWish} = useContext(shopContext);
+    const {id, sale, photo,productName,productPrice,ProductDescription} = props.item;
+    return(
         <>
-         <div className='col-lg-3 col-md-4 mb-3'>     
+             <div className='col-lg-3 col-md-4 mb-3'>     
                         <div className='product-box'>
+                        <a   href='#!' className='text-decoration-none text-dark' onClick={() => removeFromWish(id)}>
+                        <MDBIcon fas icon="times"/>
+                      </a>
                             <div className='product-inner-box position-relative'>
                                 <div className='icons position-absolute'>
-                                    <button href="#" className='text-decoration-none text-dark'><AiFillHeart onClick={() => addToWish(id)}/></button>
-                                    <button href="#" className='text-decoration-none text-dark' onClick={() => addToCompare(id)}><MdCompareArrows /></button>
-                                    <button href="#" className='text-decoration-none text-dark'><AiFillEye /></button>
+                                <button href="#" className='text-decoration-none text-dark' onClick={() => addToCompare(id)}><MdCompareArrows /></button>
+                                    <button  className='text-decoration-none text-dark'><AiFillEye /></button>
 
                                 </div>
                                 <div className='onsale'>
@@ -44,7 +55,6 @@ const ItemCard = (props) =>{
                                 </div>
                                 <div className='product-price'>
                                     $<span>{productPrice}</span>
-                                    <div className='rating'>{rating} <span><AiOutlineStar /></span></ div>
 
                                 </div>
                                 <div className='product-description'>
@@ -61,9 +71,7 @@ const ItemCard = (props) =>{
                     </div>
 
         </>
-
-
     )
-}
 
-export default ItemCard;
+}
+export default WishListProducts;

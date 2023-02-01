@@ -141,10 +141,13 @@ const Cart = () =>{
                     </MDBTypography>
                     <MDBTypography tag="h5">{totalamount}</MDBTypography>
                   </div>
-
+                  <div>
                   <MDBBtn color="dark" block size="lg">
                     Register
                   </MDBBtn>
+                  </div>
+
+                 
                 </div>
               </MDBCol>
             </MDBRow>

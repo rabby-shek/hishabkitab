@@ -38,6 +38,19 @@ const getDefaultCompare = () => {
 
 
 
+//wishlist start here
+const getDefaultWishlist = () => {
+  let wish = {};
+  for (let i = 1; i < PRODUCTS.length + 1; i++) {
+    wish[i] = 0;
+   
+  }
+  return wish;
+};
+//wishlist ends here
+
+
+
 
 
 export const Shop_context = (props) => {
@@ -126,10 +139,47 @@ export const Shop_context = (props) => {
 
 
 
+    //wishlist logical parts start here
+    const [wishItems, setWishItems] = useState(getDefaultWishlist());
+
+    const getTotalWishAmount = () => {
+      let totalAmount = 0;
+      for (const item in wishItems) {
+        if (wishItems[item] > 0) {
+          let itemInfo = PRODUCTS.find((product) => product.id === Number(item));
+          totalAmount += wishItems[item] * itemInfo.productPrice;
+        }
+      }
+      return totalAmount;
+    };
+
+    const getTotalWishItem = () => {
+      let totalWishitem = 0;
+      for (const item in wishItems) {
+        if (wishItems[item] > 0) {
+          let itemInfo = PRODUCTS.find((product) => product.id === Number(item));
+          totalWishitem += wishItems[item];
+        }
+      }
+      return totalWishitem;
+    };
+
+    const addToWish = (itemId) => {
+      setWishItems((prev) => ({ ...prev, [itemId]: prev[itemId] + 1 }));
+    };
+    const removeFromWish = (itemId) => {
+      setWishItems((prev) => ({ ...prev, [itemId]: prev[itemId] - 1 }));
+    };
+
+
+    //wishlist logical parts ends here
+
+
+
     //exporting the functions from here
 
     const contextValue = 
-    {cartItems , compareItems
+    {cartItems , compareItems , wishItems
       , addTocart 
       , removeFromcart 
       , removeAllFromcart 
@@ -140,6 +190,10 @@ export const Shop_context = (props) => {
       , removeFromCompare
       , getTotalCompareItem
       , getTotalCompareAmount
+      , addToWish
+      , removeFromWish
+      , getTotalWishItem
+      , getTotalWishAmount
     }
 
     //exporting functions ends here
